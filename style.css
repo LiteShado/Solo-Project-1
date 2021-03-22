@@ -1,0 +1,22 @@
+
+h1 {
+    color: 4px solid orange;
+}
+
+.direction {
+    color: 2px solid black;
+}
+
+.directionBold {
+    color: 5px solid black;
+}
+
+audio {
+    width: 100px;
+    height: 10px;
+    color: black;
+}
+
+audio#audiocontrol {
+    visibility: visible;
+}

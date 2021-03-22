@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="script.js" async></script>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <h1 class="instruction">Welcome to Circle of Fifths</h1>
+            <h1 class="instruction">Here you will choose one note and assign it to a box</h1>
+        </div>
+        <div class="game-area">
+            <div class="container">
+                <div class="game-container">
+                    <p class="notes">Scale of C</p>
+                        <button class="c-note" id="cnotechoice">C
+                            <audio controls id="audiocontrol">
+                        <source class="c-note-music" src="Assets/ESM_Vibe_One_Shot_Synth_Alternative_R&B_Piano_Emotion_C_Melodic_Stab_Note_Dusty.wav" type="audio/mpeg" id="cnotemusic" onclick="play()"></audio></button>
+
+                        <button class="d-note" id="dnotechoice">D
+                            <audio controls id="audiocontrol">
+                            <source class="d-note-music" src="Assets/ESM_Vibe_One_Shot_Synth_Organic_LoFi_Smeared_D_Melodic_Stab_Note_Dusty.wav" type="audio/mpeg" id="dnotemusic" onclick="play()"></audio></button>
+                </div>
+                <div class="player-area">
+                    <p class="direction directionBold">Choose your note for each flask</p>
+                        <div class="flask1" id="flask1choice">
+                            <img src="Assets/Elixir .jpg">
+                            <p id = "displayNoteChoice"></p>
+                        </div>
+
+                        <div class="flask2" id="flask2choice">
+                            <img src="Assets/Elixir .jpg">
+                            <p id = "displayNoteChoice"></p>
+                        </div>
+            </div>
+        </div>
+
+        </div>
+        <div></div>
+        <div></div>
+    </main>
+</body>
+</html>
