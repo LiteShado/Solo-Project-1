@@ -5,14 +5,34 @@ let flask = document.querySelector(".flask1")
 let flask2 = document.querySelector(".flask2")
 const direction = document.querySelector(".direction")
 const directionBold = document.querySelector(".directionBold")
+var form = document.querySelector("form");
+var playerPoints = document.querySelector(".player-points");
+
 // const cnotemusic = document.getElementsByClassName("c-note-music")
 let flask1Choice = document.querySelector('#flask1choice').addEventListener('click', () => {
     // console.log('test')
 })
 
-let flask2Choice = document.querySelector('#flask2choice').addEventListener('click', () => {
-    // console.log('test2')
+// let flask2Choice = document.querySelector('#flask2choice').addEventListener('click', () => {
+//     // console.log('test2')
+// })
+
+
+const submitButton = document.querySelector('#submitbutton').addEventListener('click', () => {
+    e.preventDefault();
 })
+
+
+const points = document.querySelector('#points')
+
+// const pointsValue = (points.value)
+
+
+let pointsValue = () => {
+    (('#c-button1').value) === true || (('#d-button1').value) === true
+        pointsValue.value = 5;
+}
+
 
 const cnotemusic = document.querySelector('#cnotechoice').addEventListener('click', () => {
     console.log('test3')
@@ -23,6 +43,13 @@ const dnotemusic = document.querySelector('#dnotechoice').addEventListener('clic
     console.log('test4')
     playMusic();
 })
+
+
+const cnotechoice = document.querySelector('#c-button1').addEventListener('click', () => {
+    console.log('test4')
+    playMusic();
+})
+
 
 document.getElementById("audiocontrol").controls = true;
 document.getElementById("audiocontrol").controls.download = false;
@@ -36,6 +63,25 @@ async function playMusic() {
         cnotechoice.classList.remove("playing");
     }
 }
+
+
+
+
+
+
+
+//referenced an example provided at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio//
+
+// form.addEventListener("submit", function(event) {
+//     var data = new FormData(form);
+//     var output = "";
+//     for (const entry of data) {
+//       output = output + entry[C] + "=" + entry[D] + "\r";
+//     };
+//     log.innerText = output;
+//     event.preventDefault();
+//   }, false);
+
 
 
 
