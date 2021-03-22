@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = "style.css" rel="stylesheet" type="text/css" media="all">
     <title>Document</title>
-    <script src="script.js" async></script>
+    <script src="script2.js" async></script>
 </head>
 <body>
     <main>
@@ -25,25 +25,31 @@
 
 
                 <div class="player-area">
-                    <p class="direction directionBold">Press the "Play" button on each note to hear the sound. Then, tap each flask to assign it a note.</p>
+                    <p class="direction directionBold">Press the "Play" button on each note to hear the sound. Then, assign your note to each Elixir flask.</p>
                         <div class="flask1" id="flask1choice">
-                            <img src="Assets/Elixir .jpg">
-                            <input type="radio" id="c-button1" name="choice" value="c1" class="radio-button">
-                            <label for="cbutton">C</label><br>
-                            <input type="radio" id="d-button1" name="choice" value="d1" class="radio-button">
-                            <label for="dbutton">D</label><br>
-                            <p id = "displayNoteChoice1"></p>
+                            <form>
+                                <img src="Assets/Elixir .jpg">
+                                <p>You Choose?</p>
+                                <input type="radio" id="c-button1" name="choice" value="5" class="radio-button" autocomplete='on'>
+                                <label for="cbutton">C</label><br>
+                                <input type="radio" id="d-button1" name="choice" value="3" class="radio-button" autocomplete='on'>
+                                <label for="dbutton">D</label><br>
+                                <p id = "displayNoteChoice1"></p>
                         </div>
 
-                    <form>
                         <div>
                             <button type="submit" id="submitbutton">Submit</button>
                           </div>
                     </form>
+                <pre id="log">
+
+                </pre>
+
+
 
                 <div>
                     <p class="player-points">Your points are:</p>
-                    <div id="points"></div>
+                    <pre id="points"></pre>
                 </div>
                 <div>
                     <button id="hit-next">NEXT</button>

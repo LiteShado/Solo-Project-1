@@ -32,35 +32,32 @@ const dnotemusic = document.querySelector('#dnotechoice').addEventListener('clic
         dnotemusicsound.play();
 })
 
+//////////////////////////////////
 
-const cnotechoice = document.querySelector('#c-button1').addEventListener('click', () => {
-    console.log('test4')
-    // playMusic();
-})
+////radio button select code//////
 
-let cbuttonClicked = document.querySelector('#c-button1').addEventListener('click', () => {
+const cbuttonClicked = document.querySelector('#c-button1').addEventListener('click', () => {
     console.log('test5')
-
 })
 
-let dbuttonClicked = document.querySelector('#d-button1').addEventListener('click', () => {
+const dbuttonClicked = document.querySelector('#d-button1').addEventListener('click', () => {
     console.log('test6')
 })
 
 
-// const cnotemusic = document.getElementsByClassName("c-note-music")
-let flask1Choice = document.querySelector('#flask1choice').addEventListener('click', () => {
-    console.log('test')
-})
+// // const cnotemusic = document.getElementsByClassName("c-note-music")
+// let flask1Choice = document.querySelector('#flask1choice').addEventListener('click', () => {
+//     console.log('test')
+// })
 
 // let flask2Choice = document.querySelector('#flask2choice').addEventListener('click', () => {
 //     // console.log('test2')
 // })
 
 
-const submitButton = document.querySelector('#submitbutton').addEventListener('click', () => {
-    e.preventDefault();
-})
+// const submitButton = document.querySelector('#submitbutton').addEventListener('click', () => {
+//     e.preventDefault();
+// })
 
 // if (cbuttonClicked = true) {
 //     console.log("button clicked")
@@ -69,8 +66,16 @@ const submitButton = document.querySelector('#submitbutton').addEventListener('c
 // }
 
 
+// let cnotesubmitted = cbuttonClicked
 
-let points = document.querySelector('#points')
+// function showPoints(cbuttonClicked){
+//     submitButton => {
+//     playerPoints.innerText = "5";
+// })
+
+// button.addEventListener('mouseover', (e)
+
+// let points = document.querySelector('#points')
 
 // const pointsValue = (points.value)
 
@@ -78,10 +83,10 @@ let points = document.querySelector('#points')
 
 
 let pointsValue = (submitButton) => {
-    (('#c-button1').value) === "c1" || (('#d-button1').value) === "d1"
+    (('#c-button1').checked) === "c1" || (('#d-button1').checked) === "d1"
+        console.log("checked")
         pointsValue.value = 5;
         playerPoints.innerText = "5";
-
 }
 /////music code/////
 
@@ -155,3 +160,27 @@ let pointsValue = (submitButton) => {
 
 //variables for music//
 //https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play//
+
+
+// const submitButton = document.querySelector('#submitbutton').addEventListener('click', () => {
+//     e.preventDefault();
+// })
+
+
+// form.addEventListener("submit", function(event) {
+//     var data = new FormData(form);
+//     var output = "";
+//     for (const entry of data) {
+//       output = output + entry[0] + "=" + entry[1] + "\r";
+//     };
+//     log.innerText = output;
+//     event.preventDefault();
+//   }, false);
+
+
+// let pointsValue = () => {
+//     (('#c-button1').checked) === "c1" || (('#d-button1').checked) === "d1"
+//         console.log("checked")
+//         pointsValue.value = 5;
+//         playerPoints.innerText = "5";
+// }
