@@ -184,3 +184,35 @@ let pointsValue = (submitButton) => {
 //         pointsValue.value = 5;
 //         playerPoints.innerText = "5";
 // }
+
+
+// const cbuttonClicked = document.querySelector('#c-button1').addEventListener('click', () => {
+//     console.log('test5')
+//     return 5
+// })
+
+// const dbuttonClicked = document.querySelector('#d-button1').addEventListener('click', () => {
+//     console.log('test6')
+//     return 2
+// })
+
+// cbuttonClicked function(event) {
+    // form.addEventListener("submit", function(event) {
+    // var data = new FormData(form);
+    // var output = "";
+    // for (const entry of data) {
+    //   output = + entry[0] + "=" + entry[1] + "\r";
+    // };
+
+//     if (cbuttonClicked) {
+//         log.innerText = cbuttonClicked.value;
+//         event.preventDefault();
+//     } else if (dbuttonClicked) {
+//         log.innerText = dbuttonClicked.value;
+//     }
+// })
+
+// const radioBtnC = document.querySelector('#c-button1').addEventListener('click', () => {
+// 	console.log('it was clicked')
+// 	return 5
+// })
