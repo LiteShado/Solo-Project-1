@@ -8,6 +8,57 @@ const directionBold = document.querySelector(".directionBold")
 var form = document.querySelector("form");
 var playerPoints = document.querySelector("#points");
 
+//variables for music//
+
+let cnotemusicsound = new Audio ('Assets/ESM_Vibe_One_Shot_Synth_Alternative_R&B_Piano_Emotion_C_Melodic_Stab_Note_Dusty.wav')
+cnotemusicsound.volume = 1.0;
+
+let dnotemusicsound = new Audio ('Assets/ESM_Vibe_One_Shot_Synth_Organic_LoFi_Smeared_D_Melodic_Stab_Note_Dusty.wav')
+cnotemusicsound.volume = 0.6;
+
+///////////////////////
+//<source class="c-note-music" src="Assets/ESM_Vibe_One_Shot_Synth_Alternative_R&B_Piano_Emotion_C_Melodic_Stab_Note_Dusty.wav" type="audio/mpeg" id="cnotemusic" onclick="play()"></audio></button>
+//<source class="d-note-music" src="Assets/ESM_Vibe_One_Shot_Synth_Organic_LoFi_Smeared_D_Melodic_Stab_Note_Dusty.wav" type="audio/mpeg" id="dnotemusic" onclick="play()"></audio></button>//
+//<audio controls id="audiocontrol">
+
+
+
+let music = document.querySelectorAll('.music')
+music.forEach(button => {
+    button.addEventListener('click', (e) => {
+        // cnotemusicsound.play();
+    })
+    button.addEventListener('click', (e) => {
+        cnotemusicsound.pause();
+        cnotemusicsound.currentTime = 0;
+    })
+})
+const cnotemusic = document.querySelector('#cnotechoice').addEventListener('click', () => {
+    console.log('test3')
+        cnotemusicsound.play();
+})
+
+const dnotemusic = document.querySelector('#dnotechoice').addEventListener('click', () => {
+    console.log('test4')
+        dnotemusicsound.play();
+})
+
+
+const cnotechoice = document.querySelector('#c-button1').addEventListener('click', () => {
+    console.log('test4')
+    // playMusic();
+})
+
+let cbuttonClicked = document.querySelector('#c-button1').addEventListener('click', () => {
+    console.log('test5')
+
+})
+
+let dbuttonClicked = document.querySelector('#d-button1').addEventListener('click', () => {
+    console.log('test6')
+})
+
+
 // const cnotemusic = document.getElementsByClassName("c-note-music")
 let flask1Choice = document.querySelector('#flask1choice').addEventListener('click', () => {
     console.log('test')
@@ -22,13 +73,22 @@ const submitButton = document.querySelector('#submitbutton').addEventListener('c
     e.preventDefault();
 })
 
+// if (cbuttonClicked = true) {
+//     console.log("button clicked")
+// } else if (dbuttonClicked = true) {
+//     console.log("another button clicked")
+// }
+
+
 
 let points = document.querySelector('#points')
 
 // const pointsValue = (points.value)
 
 
-let pointsValue = () => {
+
+
+let pointsValue = (submitButton) => {
     (('#c-button1').value) === "c1" || (('#d-button1').value) === "d1"
         pointsValue.value = 5;
         playerPoints.innerText = "5";
@@ -36,25 +96,10 @@ let pointsValue = () => {
 }
 /////music code/////
 
-const cnotemusic = document.querySelector('#cnotechoice').addEventListener('click', () => {
-    console.log('test3')
-    // playMusic();
-})
-
-const dnotemusic = document.querySelector('#dnotechoice').addEventListener('click', () => {
-    console.log('test4')
-    // playMusic();
-})
 
 
-const cnotechoice = document.querySelector('#c-button1').addEventListener('click', () => {
-    console.log('test4')
-    // playMusic();
-})
-
-
-document.getElementById("audiocontrol").controls = true;
-document.getElementById("audiocontrol").controls.download = false;
+// document.getElementById("audiocontrol").controls = true;
+// document.getElementById("audiocontrol").controls.download = false;
 
 
 
