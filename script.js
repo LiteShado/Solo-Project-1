@@ -7,15 +7,15 @@ const direction = document.querySelector(".direction")
 const directionBold = document.querySelector(".directionBold")
 // const cnotemusic = document.getElementsByClassName("c-note-music")
 let flask1Choice = document.querySelector('#flask1choice').addEventListener('click', () => {
-    console.log('test')
+    // console.log('test')
 })
 
 let flask2Choice = document.querySelector('#flask2choice').addEventListener('click', () => {
-    console.log('test3')
+    // console.log('test2')
 })
 
 const cnotemusic = document.querySelector('#cnotechoice').addEventListener('click', () => {
-    console.log('test2')
+    console.log('test3')
     playMusic();
 })
 
@@ -36,6 +36,8 @@ async function playMusic() {
         cnotechoice.classList.remove("playing");
     }
 }
+
+
 
 
 

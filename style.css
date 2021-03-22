@@ -1,22 +1,38 @@
 
-h1 {
-    color: 4px solid orange;
+
+
+body {
+
+    color: #d40b26;
+
+
 }
 
-.direction {
-    color: 2px solid black;
+p {
+    color: #1cd40b;
 }
 
-.directionBold {
-    color: 5px solid black;
-}
 
 audio {
-    width: 100px;
+    width: 50px;
     height: 10px;
     color: black;
 }
 
 audio#audiocontrol {
     visibility: visible;
+}
+
+
+.flask1,
+.flask2
+ {
+    margin: 50px;
+    display: block;
+}
+
+
+#hit-next {
+    margin: 100px;
+    padding: 15px;
 }

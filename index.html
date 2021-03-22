@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href = "style.css" rel="stylesheet" type="text/css" media="all">
     <title>Document</title>
     <script src="script.js" async></script>
 </head>
@@ -26,17 +26,27 @@
                             <audio controls id="audiocontrol">
                             <source class="d-note-music" src="Assets/ESM_Vibe_One_Shot_Synth_Organic_LoFi_Smeared_D_Melodic_Stab_Note_Dusty.wav" type="audio/mpeg" id="dnotemusic" onclick="play()"></audio></button>
                 </div>
+
+
                 <div class="player-area">
-                    <p class="direction directionBold">Choose your note for each flask</p>
+                    <p class="direction directionBold">Press the "Play" button on each note to hear the sound. Then, tap each flask to assign it a note.</p>
                         <div class="flask1" id="flask1choice">
                             <img src="Assets/Elixir .jpg">
-                            <p id = "displayNoteChoice"></p>
+                            <p id = "displayNoteChoice1"></p>
                         </div>
 
                         <div class="flask2" id="flask2choice">
                             <img src="Assets/Elixir .jpg">
-                            <p id = "displayNoteChoice"></p>
+                            <p id = "displayNoteChoice2"></p>
                         </div>
+
+                <div>
+                    <p class="player-points">Your points are:</p>
+                    <div id="points"></div>
+                </div>
+                <div>
+                    <button id="hit-next">NEXT</button>
+                </div>
             </div>
         </div>
 
