@@ -68,10 +68,15 @@ cbuttonClicked.addEventListener('click', () => {
         // var integer = parseInt(text, 10);
         // returns 42
     cButtonValueNumber = 0
-    counter.innerText = cButtonValueNumber += 5;
+    counter.innerText = cButtonValueNumber += 5
+
+    function storedPoints(){
+        var cButtonPoints = cButtonValueNumber++;
+        console.log(cButtonPoints)
         // return 5;
-    })
-    console.log();
+    }
+    storedPoints();
+});
 
 dbuttonClicked.addEventListener('click', () => {
         // document.querySelector('#c-button1') {
@@ -79,16 +84,20 @@ dbuttonClicked.addEventListener('click', () => {
         // log.innerText = dbuttonClicked.value;
     dButtonValueNumber = 0
     counter.innerText = dButtonValueNumber += 3
+
+        ///beginning of function code//
     function storedPoints(){
-        var dButtonPoints = dButtonValueNumber;
-        localStorage.setItem("storedPoints", dButtonPoints);
-        return storedPoints.value
-            // return 3;
+        var dButtonPoints = dButtonValueNumber++;
+        console.log(dButtonPoints)
     }
-    console.log(storedPoints);
-    })
+    storedPoints();
+    });
 
 
     // localStorage.setItem("storedPoints", )
 
     //https://stackoverflow.com/questions/28512528/how-to-store-user-typed-value-before-in-to-javascript-variable-before-submit-but
+
+    //Syntax for REMOVING data from localStorage: localStorage.removeItem("key");
+
+    //https://stackoverflow.com/questions/58679452/how-can-i-save-multiple-click-counters-in-localstorage

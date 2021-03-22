@@ -216,3 +216,10 @@ let pointsValue = (submitButton) => {
 // 	console.log('it was clicked')
 // 	return 5
 // })
+
+        // var callPoints = window.localStorage.setItem("storedPoints", JSON.stringify(dButtonPoints));
+        // console.log(callPoints);
+        // return storedPoints.value
+            // return 3;
+        // var callPoints = localStorage.getItem(storedPoints)
+        //     callPoints = JSON.parse(callPoints);
