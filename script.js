@@ -6,11 +6,11 @@ let flask2 = document.querySelector(".flask2")
 const direction = document.querySelector(".direction")
 const directionBold = document.querySelector(".directionBold")
 var form = document.querySelector("form");
-var playerPoints = document.querySelector(".player-points");
+var playerPoints = document.querySelector("#points");
 
 // const cnotemusic = document.getElementsByClassName("c-note-music")
 let flask1Choice = document.querySelector('#flask1choice').addEventListener('click', () => {
-    // console.log('test')
+    console.log('test')
 })
 
 // let flask2Choice = document.querySelector('#flask2choice').addEventListener('click', () => {
@@ -23,31 +23,33 @@ const submitButton = document.querySelector('#submitbutton').addEventListener('c
 })
 
 
-const points = document.querySelector('#points')
+let points = document.querySelector('#points')
 
 // const pointsValue = (points.value)
 
 
 let pointsValue = () => {
-    (('#c-button1').value) === true || (('#d-button1').value) === true
+    (('#c-button1').value) === "c1" || (('#d-button1').value) === "d1"
         pointsValue.value = 5;
-}
+        playerPoints.innerText = "5";
 
+}
+/////music code/////
 
 const cnotemusic = document.querySelector('#cnotechoice').addEventListener('click', () => {
     console.log('test3')
-    playMusic();
+    // playMusic();
 })
 
 const dnotemusic = document.querySelector('#dnotechoice').addEventListener('click', () => {
     console.log('test4')
-    playMusic();
+    // playMusic();
 })
 
 
 const cnotechoice = document.querySelector('#c-button1').addEventListener('click', () => {
     console.log('test4')
-    playMusic();
+    // playMusic();
 })
 
 
@@ -55,14 +57,16 @@ document.getElementById("audiocontrol").controls = true;
 document.getElementById("audiocontrol").controls.download = false;
 
 
-async function playMusic() {
-    try {
-        await cnotemusic.play();
-        cnotechoice.classList.add("playing");
-    } catch(err) {
-        cnotechoice.classList.remove("playing");
-    }
-}
+
+
+// async function playMusic() {
+//     try {
+//         await cnotemusic.play();
+//         cnotechoice.classList.add("playing");
+//     } catch(err) {
+//         cnotechoice.classList.remove("playing");
+//     }
+// }
 
 
 
