@@ -21,18 +21,7 @@ cnotemusicsound.volume = 0.6;
 //<source class="d-note-music" src="Assets/ESM_Vibe_One_Shot_Synth_Organic_LoFi_Smeared_D_Melodic_Stab_Note_Dusty.wav" type="audio/mpeg" id="dnotemusic" onclick="play()"></audio></button>//
 //<audio controls id="audiocontrol">
 
-
-
-let music = document.querySelectorAll('.music')
-music.forEach(button => {
-    button.addEventListener('click', (e) => {
-        // cnotemusicsound.play();
-    })
-    button.addEventListener('click', (e) => {
-        cnotemusicsound.pause();
-        cnotemusicsound.currentTime = 0;
-    })
-})
+///code for making music play////
 const cnotemusic = document.querySelector('#cnotechoice').addEventListener('click', () => {
     console.log('test3')
         cnotemusicsound.play();
