@@ -79,8 +79,16 @@ dbuttonClicked.addEventListener('click', () => {
         // log.innerText = dbuttonClicked.value;
     dButtonValueNumber = 0
     counter.innerText = dButtonValueNumber += 3
-        // return 3;
+    function storedPoints(){
+        var dButtonPoints = dButtonValueNumber;
+        localStorage.setItem("storedPoints", dButtonPoints);
+        return storedPoints.value
+            // return 3;
+    }
+    console.log(storedPoints);
     })
-    console.log();
 
-    
+
+    // localStorage.setItem("storedPoints", )
+
+    //https://stackoverflow.com/questions/28512528/how-to-store-user-typed-value-before-in-to-javascript-variable-before-submit-but
