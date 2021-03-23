@@ -37,6 +37,14 @@ p {
 }
 
 
+#points {
+    color: blue;
+    font-size: 50px;
+    padding: 5px;
+    margin: 5px;
+    animation: pulse 2s infinite;
+}
+
 audio {
     width: 100px;
     height: 20px;

@@ -42,19 +42,19 @@
 
 
                 <div class="player-area">
-                    <p class="direction directionBold">Press the "Play" button on each note to hear the sound. One of the notes is wrong...choose which note does not belong!!</p>
+                    <p class="direction directionBold" id="direction">Press the "Play" button on each note to hear the sound. One of the notes is wrong...choose which note does not belong!!</p>
                         <div class="flask1" id="flask1choice">
                             <form>
-                                <img src="Assets/Elixir .jpg">
-                                <p>You Choose?</p>
+                                <img src="Assets/Elixir .jpg" id="flask">
+                                <p id="youchoose">You Choose?</p>
                                 <input type="radio" id="c-button1" name="choice" value="5" class="radio-button" autocomplete='on'>
                                 <label for="cbutton" id="cbuttonchoice">C</label><br>
                                 <input type="radio" id="d-button1" name="choice" value="3" class="radio-button" autocomplete='on'>
-                                <label for="dbutton">D</label><br>
+                                <label for="dbutton" id="dbuttonchoice">D</label><br>
                                 <input type="radio" id="g-button1" name="choice" value="5" class="radio-button" autocomplete='on'>
-                                <label for="gbutton">G</label><br>
+                                <label for="gbutton"id="gbuttonchoice">G</label><br>
                                 <input type="radio" id="e-button1" name="choice" value="3" class="radio-button" autocomplete='on'>
-                                <label for="ebutton">E</label><br>
+                                <label for="ebutton"id="ebuttonchoice">E</label><br>
                                 <input type="radio" id="bb-button1" name="choice" value="0" class="radio-button" autocomplete='on'>
                                 <label for="bbbutton" id="bbbuttonlabel">Bb</label><br>
                                 <input type="radio" id="fsharp-button1" name="choice" value="0" class="radio-button" autocomplete='on'>
@@ -75,7 +75,7 @@
 
 
                 <div>
-                    <p class="player-points">Your points are:</p>
+                    <p class="player-points">My Verdict:</p>
                     <pre id="points"></pre>
                     <p id="restart">Press Restart</p>
                 </div>

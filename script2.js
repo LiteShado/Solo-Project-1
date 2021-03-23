@@ -174,6 +174,25 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 // var text = '42px';
                 // var integer = parseInt(text, 10);
                 // returns 42
+            document.querySelector('#cnotechoice').classList.add('hidden')
+            document.querySelector('#gscale').classList.add('hidden')
+            document.querySelector('#youchoose').classList.add('hidden')
+            document.querySelector('#direction').classList.add('hidden')
+            document.querySelector('#flask').classList.add('hidden')
+            document.querySelector('#cbuttonchoice').classList.add('hidden')
+            document.querySelector('#dnotechoice').classList.add('hidden')
+            document.querySelector('#dbuttonchoice').classList.add('hidden')
+            document.querySelector('#gnotechoice').classList.add('hidden')
+            document.querySelector('#gbuttonchoice').classList.add('hidden')
+            document.querySelector('#bbnotechoice').classList.add('hidden')
+            document.querySelector('#bbbuttonlabel').classList.add('hidden')
+            document.querySelector('#enotechoice').classList.add('hidden')
+            document.querySelector('#ebuttonchoice').classList.add('hidden')
+            document.querySelector('#c-button1').classList.add('hidden')
+            document.querySelector('#d-button1').classList.add('hidden')
+            document.querySelector('#g-button1').classList.add('hidden')
+            document.querySelector('#e-button1').classList.add('hidden')
+            document.querySelector('#bb-button1').classList.add('hidden')
             cButtonValueNumber = ""
             counter.innerText = cButtonValueNumber += "OOPS"
 
@@ -196,6 +215,38 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
+
+
+            document.querySelector('#cscale').classList.add('hidden')
+            document.querySelector('#cscaleoption').classList.add('hidden')
+            document.querySelector('#cnotechoice').classList.add('hidden')
+            document.querySelector('#youchoose').classList.add('hidden')
+            document.querySelector('#direction').classList.add('hidden')
+            document.querySelector('#flask').classList.add('hidden')
+            document.querySelector('#cbuttonchoice').classList.add('hidden')
+            document.querySelector('#dnotechoice').classList.add('hidden')
+            document.querySelector('#dbuttonchoice').classList.add('hidden')
+            document.querySelector('#gnotechoice').classList.add('hidden')
+            document.querySelector('#gbuttonchoice').classList.add('hidden')
+            document.querySelector('#bbnotechoice').classList.add('hidden')
+            document.querySelector('#bbbuttonlabel').classList.add('hidden')
+            document.querySelector('#enotechoice').classList.add('hidden')
+            document.querySelector('#ebuttonchoice').classList.add('hidden')
+            document.querySelector('#c-button1').classList.add('hidden')
+            document.querySelector('#d-button1').classList.add('hidden')
+            document.querySelector('#g-button1').classList.add('hidden')
+            document.querySelector('#e-button1').classList.add('hidden')
+            document.querySelector('#bb-button1').classList.add('hidden')
+            document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+            document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
+            document.querySelector('#esharp-button1').classList.add('hidden')
+            document.querySelector('#fsharp-button1').classList.add('hidden')
+            document.querySelector('#fsharpnotechoice').classList.add('hidden')
+            document.querySelector('#esharpnotechoice').classList.add('hidden')
+            document.querySelector('#gscale').classList.add('hidden')
+
+
+
             dButtonValueNumber = ""
             counter.innerText = dButtonValueNumber += "D'OH"
 
@@ -218,6 +269,39 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
+
+                document.querySelector('#cnotechoice').classList.add('hidden')
+                document.querySelector('#youchoose').classList.add('hidden')
+                document.querySelector('#direction').classList.add('hidden')
+                document.querySelector('#flask').classList.add('hidden')
+                document.querySelector('#cbuttonchoice').classList.add('hidden')
+                document.querySelector('#dnotechoice').classList.add('hidden')
+                document.querySelector('#dbuttonchoice').classList.add('hidden')
+                document.querySelector('#gnotechoice').classList.add('hidden')
+                document.querySelector('#gbuttonchoice').classList.add('hidden')
+                document.querySelector('#bbnotechoice').classList.add('hidden')
+                document.querySelector('#bbbuttonlabel').classList.add('hidden')
+                document.querySelector('#enotechoice').classList.add('hidden')
+                document.querySelector('#ebuttonchoice').classList.add('hidden')
+                document.querySelector('#c-button1').classList.add('hidden')
+                document.querySelector('#d-button1').classList.add('hidden')
+                document.querySelector('#g-button1').classList.add('hidden')
+                document.querySelector('#e-button1').classList.add('hidden')
+                document.querySelector('#bb-button1').classList.add('hidden')
+                document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#esharp-button1').classList.add('hidden')
+                document.querySelector('#fsharp-button1').classList.add('hidden')
+                document.querySelector('#fsharpnotechoice').classList.add('hidden')
+                document.querySelector('#esharpnotechoice').classList.add('hidden')
+                document.querySelector('#gscale').classList.add('hidden')
+                document.querySelector('#cscale').classList.add('hidden')
+                document.querySelector('#cscaleoption').classList.add('hidden')
+
+
+
+
+
             eButtonValueNumber = ""
             counter.innerText = eButtonValueNumber += "GOSH THAT SUCKS"
 
@@ -241,6 +325,39 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
+
+                document.querySelector('#cnotechoice').classList.add('hidden')
+                document.querySelector('#youchoose').classList.add('hidden')
+                document.querySelector('#direction').classList.add('hidden')
+                document.querySelector('#flask').classList.add('hidden')
+                document.querySelector('#cbuttonchoice').classList.add('hidden')
+                document.querySelector('#dnotechoice').classList.add('hidden')
+                document.querySelector('#dbuttonchoice').classList.add('hidden')
+                document.querySelector('#gnotechoice').classList.add('hidden')
+                document.querySelector('#gbuttonchoice').classList.add('hidden')
+                document.querySelector('#bbnotechoice').classList.add('hidden')
+                document.querySelector('#bbbuttonlabel').classList.add('hidden')
+                document.querySelector('#enotechoice').classList.add('hidden')
+                document.querySelector('#ebuttonchoice').classList.add('hidden')
+                document.querySelector('#c-button1').classList.add('hidden')
+                document.querySelector('#d-button1').classList.add('hidden')
+                document.querySelector('#g-button1').classList.add('hidden')
+                document.querySelector('#e-button1').classList.add('hidden')
+                document.querySelector('#bb-button1').classList.add('hidden')
+                document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#esharp-button1').classList.add('hidden')
+                document.querySelector('#fsharp-button1').classList.add('hidden')
+                document.querySelector('#fsharpnotechoice').classList.add('hidden')
+                document.querySelector('#esharpnotechoice').classList.add('hidden')
+                document.querySelector('#gscale').classList.add('hidden')
+                document.querySelector('#cscale').classList.add('hidden')
+                document.querySelector('#cscaleoption').classList.add('hidden')
+
+
+
+
+
             gButtonValueNumber = ""
             counter.innerText = gButtonValueNumber += "YIKES!!"
 
@@ -263,6 +380,39 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
+
+                document.querySelector('#cnotechoice').classList.add('hidden')
+                document.querySelector('#youchoose').classList.add('hidden')
+                document.querySelector('#direction').classList.add('hidden')
+                document.querySelector('#flask').classList.add('hidden')
+                document.querySelector('#cbuttonchoice').classList.add('hidden')
+                document.querySelector('#dnotechoice').classList.add('hidden')
+                document.querySelector('#dbuttonchoice').classList.add('hidden')
+                document.querySelector('#gnotechoice').classList.add('hidden')
+                document.querySelector('#gbuttonchoice').classList.add('hidden')
+                document.querySelector('#bbnotechoice').classList.add('hidden')
+                document.querySelector('#bbbuttonlabel').classList.add('hidden')
+                document.querySelector('#enotechoice').classList.add('hidden')
+                document.querySelector('#ebuttonchoice').classList.add('hidden')
+                document.querySelector('#c-button1').classList.add('hidden')
+                document.querySelector('#d-button1').classList.add('hidden')
+                document.querySelector('#g-button1').classList.add('hidden')
+                document.querySelector('#e-button1').classList.add('hidden')
+                document.querySelector('#bb-button1').classList.add('hidden')
+                document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#esharp-button1').classList.add('hidden')
+                document.querySelector('#fsharp-button1').classList.add('hidden')
+                document.querySelector('#fsharpnotechoice').classList.add('hidden')
+                document.querySelector('#esharpnotechoice').classList.add('hidden')
+                document.querySelector('#gscale').classList.add('hidden')
+                document.querySelector('#cscale').classList.add('hidden')
+                document.querySelector('#cscaleoption').classList.add('hidden')
+
+
+
+
+
             bbButtonValueNumber = ""
             counter.innerText = bbButtonValueNumber += "GOOD JOB, BUCKAROO!"
 
@@ -286,6 +436,39 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
+
+                document.querySelector('#cnotechoice').classList.add('hidden')
+                document.querySelector('#youchoose').classList.add('hidden')
+                document.querySelector('#direction').classList.add('hidden')
+                document.querySelector('#flask').classList.add('hidden')
+                document.querySelector('#cbuttonchoice').classList.add('hidden')
+                document.querySelector('#dnotechoice').classList.add('hidden')
+                document.querySelector('#dbuttonchoice').classList.add('hidden')
+                document.querySelector('#gnotechoice').classList.add('hidden')
+                document.querySelector('#gbuttonchoice').classList.add('hidden')
+                document.querySelector('#bbnotechoice').classList.add('hidden')
+                document.querySelector('#bbbuttonlabel').classList.add('hidden')
+                document.querySelector('#enotechoice').classList.add('hidden')
+                document.querySelector('#ebuttonchoice').classList.add('hidden')
+                document.querySelector('#c-button1').classList.add('hidden')
+                document.querySelector('#d-button1').classList.add('hidden')
+                document.querySelector('#g-button1').classList.add('hidden')
+                document.querySelector('#e-button1').classList.add('hidden')
+                document.querySelector('#bb-button1').classList.add('hidden')
+                document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#esharp-button1').classList.add('hidden')
+                document.querySelector('#fsharp-button1').classList.add('hidden')
+                document.querySelector('#fsharpnotechoice').classList.add('hidden')
+                document.querySelector('#esharpnotechoice').classList.add('hidden')
+                document.querySelector('#gscale').classList.add('hidden')
+                document.querySelector('#cscale').classList.add('hidden')
+                document.querySelector('#cscaleoption').classList.add('hidden')
+
+
+
+
+
             fsharpButtonValueNumber = ""
             counter.innerText = fsharpButtonValueNumber += "No Baby what is you doin.."
 
@@ -308,6 +491,38 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
+
+                document.querySelector('#cnotechoice').classList.add('hidden')
+                document.querySelector('#youchoose').classList.add('hidden')
+                document.querySelector('#direction').classList.add('hidden')
+                document.querySelector('#flask').classList.add('hidden')
+                document.querySelector('#cbuttonchoice').classList.add('hidden')
+                document.querySelector('#dnotechoice').classList.add('hidden')
+                document.querySelector('#dbuttonchoice').classList.add('hidden')
+                document.querySelector('#gnotechoice').classList.add('hidden')
+                document.querySelector('#gbuttonchoice').classList.add('hidden')
+                document.querySelector('#bbnotechoice').classList.add('hidden')
+                document.querySelector('#bbbuttonlabel').classList.add('hidden')
+                document.querySelector('#enotechoice').classList.add('hidden')
+                document.querySelector('#ebuttonchoice').classList.add('hidden')
+                document.querySelector('#c-button1').classList.add('hidden')
+                document.querySelector('#d-button1').classList.add('hidden')
+                document.querySelector('#g-button1').classList.add('hidden')
+                document.querySelector('#e-button1').classList.add('hidden')
+                document.querySelector('#bb-button1').classList.add('hidden')
+                document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#esharp-button1').classList.add('hidden')
+                document.querySelector('#fsharp-button1').classList.add('hidden')
+                document.querySelector('#fsharpnotechoice').classList.add('hidden')
+                document.querySelector('#esharpnotechoice').classList.add('hidden')
+                document.querySelector('#gscale').classList.add('hidden')
+                document.querySelector('#cscale').classList.add('hidden')
+                document.querySelector('#cscaleoption').classList.add('hidden')
+
+
+
+
             esharpButtonValueNumber = ""
             counter.innerText = esharpButtonValueNumber += "YOU IS SMART.."
 
@@ -325,6 +540,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
         }
                 storedPoints();
         });
+
+
 
 
         // function Counter() {
