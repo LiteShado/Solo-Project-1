@@ -16,6 +16,22 @@ var log = document.querySelector("#log");
 
 var playerPoints = document.querySelector("#points");
 
+document.querySelector('#restart').classList.add('hidden')
+
+document.querySelector('#youlosepic1').classList.add('hidden')
+document.querySelector('#youlosepic2').classList.add('hidden')
+document.querySelector('#youlosepic3').classList.add('hidden')
+document.querySelector('#youlosepic4').classList.add('hidden')
+document.querySelector('#youlosepic5').classList.add('hidden')
+document.querySelector('#youlosepic6').classList.add('hidden')
+
+
+document.querySelector('#youwinpic1').classList.add('hidden')
+document.querySelector('#youwinpic2').classList.add('hidden')
+
+
+
+
 //variables for music//
 
 let cnotemusicsound = new Audio ('Assets/ESM_Vibe_One_Shot_Synth_Alternative_R&B_Piano_Emotion_C_Melodic_Stab_Note_Dusty.wav')
@@ -193,6 +209,10 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
             document.querySelector('#g-button1').classList.add('hidden')
             document.querySelector('#e-button1').classList.add('hidden')
             document.querySelector('#bb-button1').classList.add('hidden')
+            document.querySelector('#restart').classList.remove('hidden')
+            document.querySelector('#cscale').classList.add('hidden')
+
+
             cButtonValueNumber = ""
             counter.innerText = cButtonValueNumber += "OOPS"
 
@@ -244,6 +264,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
             document.querySelector('#fsharpnotechoice').classList.add('hidden')
             document.querySelector('#esharpnotechoice').classList.add('hidden')
             document.querySelector('#gscale').classList.add('hidden')
+            document.querySelector('#restart').classList.remove('hidden')
+
 
 
 
@@ -297,6 +319,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#gscale').classList.add('hidden')
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
+                document.querySelector('#restart').classList.remove('hidden')
+
 
 
 
@@ -353,6 +377,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#gscale').classList.add('hidden')
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
+                document.querySelector('#restart').classList.remove('hidden')
+
 
 
 
@@ -408,6 +434,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#gscale').classList.add('hidden')
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
+                document.querySelector('#restart').classList.remove('hidden')
+
 
 
 
@@ -464,6 +492,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#gscale').classList.add('hidden')
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
+                document.querySelector('#restart').classList.remove('hidden')
+
 
 
 
@@ -519,6 +549,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#gscale').classList.add('hidden')
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
+                document.querySelector('#restart').classList.remove('hidden')
+
 
 
 
