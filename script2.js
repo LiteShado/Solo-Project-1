@@ -252,6 +252,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
             document.querySelector('#esharpbuttonlabel').classList.add('hidden')
             document.querySelector('#fsharp-button1').classList.add('hidden')
             document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
+            document.querySelector('#youwinpic2').classList.add('active')
+
 
             cButtonValueNumber = ""
             counter.innerText = cButtonValueNumber += "OOPS"
@@ -494,7 +496,7 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
 
 
             bbButtonValueNumber = ""
-            counter.innerText = bbButtonValueNumber += "GOOD JOB, BUCKAROO!"
+            counter.innerText = bbButtonValueNumber += "GOOD JOB!"
 
                 ///beginning of function code//
             function storedPoints(){
