@@ -18,6 +18,12 @@ var playerPoints = document.querySelector("#points");
 
 document.querySelector('#restart').classList.add('hidden')
 
+
+let submitButton2 = document.querySelector('#submitbutton').addEventListener('click', () => {
+    console.log('test3');
+    location.reload();
+})
+
 // document.querySelector('#youlosepic1').classList.add('hidden')
 // document.querySelector('#youlosepic2').classList.add('hidden')
 document.querySelector('#youlosepic3').classList.add('hidden')
