@@ -62,9 +62,56 @@
     height: 200px;
 }
 
+#youlosepic4,
+#youlosepic6,
+#youlosepic3,
+#youwinpic2 {
+    height: 300px;
+    width: 250px;
+    margin-top: -60px;
+}
+
 .instruction {
     margin-top: -25px;
 }
+#gscale,
+#cscale{
+    padding: 5px;
+    font-size:25px;
+    color: white;
+    opacity: 90%
+}
+
+#cscaleoption,
+#gscaleoption {
+    padding: 10px;
+    color: black;
+    background-color: lightgreen;
+}
+
+
+#c-button1,
+#d-button1,
+#g-button1,
+#e-button1,
+#bb-button1,
+#fsharp-button1,
+#esharp-button1{
+    padding: 20px;
+    size: 25px;
+}
+
+.cnotechoice,
+.dnotechoice,
+.gnotechoice,
+.enotechoice,
+.fsharpnotechoice,
+.esharpnotechoice {
+    size: 20px;
+}
+
+
+
 
 
 @keyframes pulse {
