@@ -9,6 +9,14 @@ body {
 
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+#hit-next {
+    visibility: hidden;
+}
+
 @keyframes pulse {
     0% {
         background-color: lightslategrey;
@@ -21,6 +29,11 @@ body {
 p {
     color: black;
     word-wrap:normal;
+}
+
+#restart {
+    color: red;
+    font-size: 35px;
 }
 
 

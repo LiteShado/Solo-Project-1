@@ -12,12 +12,20 @@
     <main>
         <div class="header">
             <h1 class="instruction">Welcome to Circle of Fifths</h1>
-            <h1 class="instruction">Here you will choose one note and assign it to a box</h1>
+            <h1 class="instruction">Here you will decide which note does not fit the scale</h1>
         </div>
         <div class="game-area">
             <div class="container">
                 <div class="game-container">
-                    <p class="notes">Scale of C Major</p>
+                    <div>
+                        <h2>Choose Your Scale Choice to begin</h2>
+                        <button id="cscaleoption">C Major Scale</button>
+                        <button id="gscaleoption">G Major Scale</button>
+
+                      </div>
+
+                    <p class="notes" id="cscale">Scale of C Major</p>
+                    <p class="notes" id="gscale">Scale of G Major</p>
                         <button class="c-note music c" id="cnotechoice">C</button>
 
                         <button class="d-note music d" id="dnotechoice">D</button>
@@ -27,34 +35,37 @@
                         <button class="e-note music e" id="enotechoice">E</button>
 
                         <button class="fsharp-note music fsharp" id="fsharpnotechoice">F#</button>
+                        <button class="esharp-note music esharp" id="esharpnotechoice">E#</button>
 
 
                 </div>
 
 
                 <div class="player-area">
-                    <p class="direction directionBold">Press the "Play" button on each note to hear the sound. Choose the notes that appear in the given scale. If you choose the incorrect note, you will receive a score of 0.</p>
+                    <p class="direction directionBold">Press the "Play" button on each note to hear the sound. One of the notes is wrong...choose which note does not belong!!</p>
                         <div class="flask1" id="flask1choice">
                             <form>
                                 <img src="Assets/Elixir .jpg">
                                 <p>You Choose?</p>
                                 <input type="radio" id="c-button1" name="choice" value="5" class="radio-button" autocomplete='on'>
-                                <label for="cbutton">C</label><br>
+                                <label for="cbutton" id="cbuttonchoice">C</label><br>
                                 <input type="radio" id="d-button1" name="choice" value="3" class="radio-button" autocomplete='on'>
                                 <label for="dbutton">D</label><br>
                                 <input type="radio" id="g-button1" name="choice" value="5" class="radio-button" autocomplete='on'>
-                                <label for="cbutton">G</label><br>
+                                <label for="gbutton">G</label><br>
                                 <input type="radio" id="e-button1" name="choice" value="3" class="radio-button" autocomplete='on'>
-                                <label for="dbutton">E</label><br>
+                                <label for="ebutton">E</label><br>
                                 <input type="radio" id="bb-button1" name="choice" value="0" class="radio-button" autocomplete='on'>
-                                <label for="dbutton">Bb</label><br>
+                                <label for="bbbutton" id="bbbuttonlabel">Bb</label><br>
                                 <input type="radio" id="fsharp-button1" name="choice" value="0" class="radio-button" autocomplete='on'>
-                                <label for="fsharpbutton">F#</label><br>
+                                <label for="fsharpbutton" id="fsharpbuttonlabel">F#</label><br>
+                                <input type="radio" id="esharp-button1" name="choice" value="0" class="radio-button" autocomplete='on'>
+                                <label for="esharpbutton" id="esharpbuttonlabel">E#</label><br>
                                 <p id = "displayNoteChoice1"></p>
                         </div>
 
                         <div>
-                            <button type="submit" id="submitbutton">Submit</button>
+                            <button type="submit" id="submitbutton">RESTART</button>
                           </div>
                     </form>
                 <pre id="log">
@@ -66,6 +77,7 @@
                 <div>
                     <p class="player-points">Your points are:</p>
                     <pre id="points"></pre>
+                    <p id="restart">Press Restart</p>
                 </div>
                 <div>
                     <button id="hit-next">NEXT</button>

@@ -42,6 +42,10 @@ let fsharpnotemusicsound = new Audio ('Assets/RTR_Fmaj7_PianoChord_13.wav')
 cnotemusicsound.volume = 0.6;
 cnotemusicsound.playbackRate = 2.0;
 
+let esharpnotemusicsound = new Audio ('Assets/SO_LN_piano_chord_maj7_Emaj.wav')
+cnotemusicsound.volume = 0.6;
+cnotemusicsound.playbackRate = 2.0;
+
 ///////////////////////
 //<source class="c-note-music" src="Assets/ESM_Vibe_One_Shot_Synth_Alternative_R&B_Piano_Emotion_C_Melodic_Stab_Note_Dusty.wav" type="audio/mpeg" id="cnotemusic" onclick="play()"></audio></button>
 //<source class="d-note-music" src="Assets/ESM_Vibe_One_Shot_Synth_Organic_LoFi_Smeared_D_Melodic_Stab_Note_Dusty.wav" type="audio/mpeg" id="dnotemusic" onclick="play()"></audio></button>//
@@ -77,6 +81,11 @@ const fsharpnotemusic = document.querySelector('#fsharpnotechoice').addEventList
         fsharpnotemusicsound.play();
 })
 
+const esharpnotemusic = document.querySelector('#esharpnotechoice').addEventListener('click', () => {
+    console.log('test7')
+        esharpnotemusicsound.play();
+})
+
 //////////////////////////////////
 
 ////radio button select code//////
@@ -97,6 +106,7 @@ let ebuttonClicked = document.querySelector('#e-button1')
 let gbuttonClicked = document.querySelector('#g-button1')
 let bbbuttonClicked = document.querySelector('#bb-button1')
 let fsharpbuttonClicked = document.querySelector('#fsharp-button1')
+let esharpbuttonClicked = document.querySelector('#esharp-button1')
 
 
 var counter = document.querySelector('#points')
@@ -119,6 +129,42 @@ bbButtonValueNumber = parseInt(bbButtonValue, 10)
 fsharpButtonValue = fsharpbuttonClicked.value
 fsharpButtonValueNumber = parseInt(fsharpButtonValue, 10)
 
+esharpButtonValue = esharpbuttonClicked.value
+esharpButtonValueNumber = parseInt(esharpButtonValue, 10)
+
+
+document.querySelector('#cscaleoption').addEventListener('click', () => {
+  document.querySelector('#cnotechoice').classList.add('active')
+  document.querySelector('#dnotechoice').classList.add('active')
+  document.querySelector('#gnotechoice').classList.add('active')
+  document.querySelector('#bbnotechoice').classList.add('active')
+  document.querySelector('#enotechoice').classList.add('active')
+  document.querySelector('#fsharpnotechoice').classList.add('hidden')
+  document.querySelector('#esharpnotechoice').classList.add('hidden')
+  document.querySelector('#gscale').classList.add('hidden')
+  document.querySelector('#gscaleoption').classList.add('hidden')
+  document.querySelector('#fsharp-button1').classList.add('hidden')
+  document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
+  document.querySelector('#esharp-button1').classList.add('hidden')
+  document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+})
+
+document.querySelector('#gscaleoption').addEventListener('click', () => {
+  document.querySelector('#cnotechoice').classList.add('hidden')
+  document.querySelector('#cbuttonchoice').classList.add('hidden')
+  document.querySelector('#c-button1').classList.add('hidden')
+  document.querySelector('#dnotechoice').classList.add('active')
+  document.querySelector('#gnotechoice').classList.add('active')
+  document.querySelector('#bbnotechoice').classList.add('hidden')
+  document.querySelector('#esharpnotechoice').classList.add('add')
+  document.querySelector('#enotechoice').classList.add('active')
+  document.querySelector('#fsharpnotechoice').classList.add('active')
+  document.querySelector('#cscale').classList.add('hidden')
+  document.querySelector('#cscaleoption').classList.add('hidden')
+  document.querySelector('#bb-button1').classList.add('hidden')
+  document.querySelector('#bbbuttonlabel').classList.add('hidden')
+})
+
 // function showThePoints(){
 
         cbuttonClicked.addEventListener('click', () => {
@@ -128,8 +174,8 @@ fsharpButtonValueNumber = parseInt(fsharpButtonValue, 10)
                 // var text = '42px';
                 // var integer = parseInt(text, 10);
                 // returns 42
-            cButtonValueNumber = 0
-            counter.innerText = cButtonValueNumber += 5
+            cButtonValueNumber = ""
+            counter.innerText = cButtonValueNumber += "OOPS"
 
             function storedPoints(){
                 storedPoints = () => {
@@ -150,8 +196,8 @@ fsharpButtonValueNumber = parseInt(fsharpButtonValue, 10)
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
-            dButtonValueNumber = 0
-            counter.innerText = dButtonValueNumber += 3
+            dButtonValueNumber = ""
+            counter.innerText = dButtonValueNumber += "D'OH"
 
                 ///beginning of function code//
             function storedPoints(){
@@ -172,8 +218,8 @@ fsharpButtonValueNumber = parseInt(fsharpButtonValue, 10)
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
-            eButtonValueNumber = 0
-            counter.innerText = eButtonValueNumber += 3
+            eButtonValueNumber = ""
+            counter.innerText = eButtonValueNumber += "GOSH THAT SUCKS"
 
                 ///beginning of function code//
             function storedPoints(){
@@ -195,8 +241,8 @@ fsharpButtonValueNumber = parseInt(fsharpButtonValue, 10)
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
-            gButtonValueNumber = 0
-            counter.innerText = gButtonValueNumber += 5
+            gButtonValueNumber = ""
+            counter.innerText = gButtonValueNumber += "YIKES!!"
 
                 ///beginning of function code//
             function storedPoints(){
@@ -217,8 +263,8 @@ fsharpButtonValueNumber = parseInt(fsharpButtonValue, 10)
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
-            bbButtonValueNumber = 0
-            counter.innerText = bbButtonValueNumber += 0
+            bbButtonValueNumber = ""
+            counter.innerText = bbButtonValueNumber += "GOOD JOB, BUCKAROO!"
 
                 ///beginning of function code//
             function storedPoints(){
@@ -240,8 +286,8 @@ fsharpButtonValueNumber = parseInt(fsharpButtonValue, 10)
                 // document.querySelector('#d-button1') {
             // console.log('test7')
                 // log.innerText = dbuttonClicked.value;
-            fsharpButtonValueNumber = 0
-            counter.innerText = fsharpButtonValueNumber += 3
+            fsharpButtonValueNumber = ""
+            counter.innerText = fsharpButtonValueNumber += "No Baby what is you doin.."
 
                 ///beginning of function code//
             function storedPoints(){
@@ -252,6 +298,28 @@ fsharpButtonValueNumber = parseInt(fsharpButtonValue, 10)
             // console.log(callPoints);
                 const callThePoints6 = window.localStorage.getItem(storedPoints, JSON.parse(fsharpButtonPoints));
                 console.log(callThePoints6);
+            }
+
+        }
+                storedPoints();
+        });
+
+        esharpbuttonClicked.addEventListener('click', () => {
+                // document.querySelector('#d-button1') {
+            // console.log('test7')
+                // log.innerText = dbuttonClicked.value;
+            esharpButtonValueNumber = ""
+            counter.innerText = esharpButtonValueNumber += "YOU IS SMART.."
+
+                ///beginning of function code//
+            function storedPoints(){
+                storedPoints = () => {
+                var esharpButtonPoints = esharpButtonValueNumber++;
+                // console.log(dButtonPoints)
+                const callPoints7 = window.localStorage.setItem(storedPoints, JSON.stringify(esharpButtonPoints));
+            // console.log(callPoints);
+                const callThePoints7 = window.localStorage.getItem(storedPoints, JSON.parse(esharpButtonPoints));
+                console.log(callThePoints7);
             }
 
         }
