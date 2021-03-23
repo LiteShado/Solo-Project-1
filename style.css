@@ -1,6 +1,25 @@
 
+/* #youlosepic1,
+#youlosepic2,
+#youlosepic3,
+#youlosepic4,
+#youlosepic5,
+#youlosepic6,
+#youlosepic7,
+#youwinpic1,
+#youwinpic2 {
 
+    .floatRight{float:right;margin-left:20px
 
+} */
+
+#choicecontainer {
+    position: relative;
+}
+
+#memecontainer {
+    position: absolute;
+}
 body {
 
     color: white;

@@ -18,15 +18,16 @@ var playerPoints = document.querySelector("#points");
 
 document.querySelector('#restart').classList.add('hidden')
 
-document.querySelector('#youlosepic1').classList.add('hidden')
-document.querySelector('#youlosepic2').classList.add('hidden')
+// document.querySelector('#youlosepic1').classList.add('hidden')
+// document.querySelector('#youlosepic2').classList.add('hidden')
 document.querySelector('#youlosepic3').classList.add('hidden')
 document.querySelector('#youlosepic4').classList.add('hidden')
-document.querySelector('#youlosepic5').classList.add('hidden')
+// document.querySelector('#youlosepic5').classList.add('hidden')
 document.querySelector('#youlosepic6').classList.add('hidden')
+// document.querySelector('#youlosepic7').classList.add('hidden')
 
 
-document.querySelector('#youwinpic1').classList.add('hidden')
+// document.querySelector('#youwinpic1').classList.add('hidden')
 document.querySelector('#youwinpic2').classList.add('hidden')
 
 
@@ -212,6 +213,13 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
             document.querySelector('#restart').classList.remove('hidden')
             document.querySelector('#cscale').classList.add('hidden')
 
+            document.querySelector('#fsharpnotechoice').classList.add('hidden')
+            document.querySelector('#esharpnotechoice').classList.add('hidden')
+
+            document.querySelector('#esharp-button1').classList.add('hidden')
+            document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+            document.querySelector('#fsharp-button1').classList.add('hidden')
+            document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
 
             cButtonValueNumber = ""
             counter.innerText = cButtonValueNumber += "OOPS"
@@ -225,10 +233,12 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 const callThePoints = window.localStorage.getItem(storedPoints, JSON.parse(cButtonPoints));
                 console.log(callThePoints);
 
+
             }
 
         }
-                storedPoints();
+        storedPoints();
+
         });
 
         dbuttonClicked.addEventListener('click', () => {
@@ -265,6 +275,10 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
             document.querySelector('#esharpnotechoice').classList.add('hidden')
             document.querySelector('#gscale').classList.add('hidden')
             document.querySelector('#restart').classList.remove('hidden')
+            document.querySelector('#youlosepic3').classList.add('active')
+            document.querySelector('#esharpnotechoice').classList.add('hidden')
+            document.querySelector('#fsharpnotechoice').classList.add('hidden')
+
 
 
 
@@ -320,6 +334,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
                 document.querySelector('#restart').classList.remove('hidden')
+                document.querySelector('#youlosepic6').classList.add('active')
+
 
 
 
@@ -378,6 +394,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
                 document.querySelector('#restart').classList.remove('hidden')
+                document.querySelector('#youlosepic3').classList.add('active')
+
 
 
 
@@ -435,6 +453,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
                 document.querySelector('#restart').classList.remove('hidden')
+                document.querySelector('#youwinpic4').classList.add('active')
+
 
 
 
@@ -493,6 +513,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
                 document.querySelector('#restart').classList.remove('hidden')
+                document.querySelector('#youlosepic4').classList.add('active')
+
 
 
 
@@ -550,6 +572,8 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
                 document.querySelector('#restart').classList.remove('hidden')
+                document.querySelector('#youwinpic2').classList.add('active')
+
 
 
 
@@ -573,6 +597,9 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 storedPoints();
         });
 
+    form.addEventListener("submit", function(event) {
+        this.reset
+})
 
 
 
