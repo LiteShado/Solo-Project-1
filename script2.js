@@ -13,10 +13,16 @@ const direction = document.querySelector(".direction")
 const directionBold = document.querySelector(".directionBold")
 var form = document.querySelector("form");
 var log = document.querySelector("#log");
+var audio = document.getElementById("intromusic");
+audio.volume=0.2;
 
 var playerPoints = document.querySelector("#points");
 
 document.querySelector('#restart').classList.add('hidden')
+
+// window.onload = function() {
+//     document.getElementById("intromusic").play();
+// }
 
 
 let submitButton2 = document.querySelector('#submitbutton').addEventListener('click', () => {
@@ -25,12 +31,18 @@ let submitButton2 = document.querySelector('#submitbutton').addEventListener('cl
 })
 
 document.querySelector('#secondscreen').classList.add('hidden')
+
+
 // document.querySelector('#firstscreen').classList.add('active')
+//https://stackoverflow.com/questions/14356956/playing-audio-after-the-page-loads-in-html
+
 
 document.querySelector('#pressstart').addEventListener('click', () => {
     document.querySelector('#firstscreen').classList.add('hidden')
     document.querySelector('#secondscreen').classList.remove('hidden')
     document.querySelector('#secondscreen').classList.add('active')
+    document.getElementById("intromusic").play();
+
 })
 document.querySelector('#pressstart').addEventListener('click', () => {
     document.querySelector('#secondscreen').classList.remove('hidden')
@@ -50,8 +62,10 @@ document.querySelector('#youwinpic2').classList.add('hidden')
 
 
 
-
 //variables for music//
+
+let intromusic = new Audio ('Assets/dch_100_full_loop_ballet_Cm.wav')
+intromusic.volume = 0.5;
 
 let cnotemusicsound = new Audio ('Assets/ESM_Vibe_One_Shot_Synth_Alternative_R&B_Piano_Emotion_C_Melodic_Stab_Note_Dusty.wav')
 cnotemusicsound.volume = 1.0;
