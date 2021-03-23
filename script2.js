@@ -24,6 +24,15 @@ let submitButton2 = document.querySelector('#submitbutton').addEventListener('cl
     location.reload();
 })
 
+document.querySelector('#secondscreen').classList.add('hidden')
+// document.querySelector('#firstscreen').classList.add('active')
+
+document.querySelector('#pressstart').addEventListener('click', () => {
+    document.querySelector('#firstscreen').classList.add('hidden')
+    document.querySelector('#secondscreen').classList.remove('hidden')
+})
+document.querySelector('#secondscreen').classList.add('active')
+
 // document.querySelector('#youlosepic1').classList.add('hidden')
 // document.querySelector('#youlosepic2').classList.add('hidden')
 document.querySelector('#youlosepic3').classList.add('hidden')
