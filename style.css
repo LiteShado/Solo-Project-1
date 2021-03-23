@@ -35,6 +35,27 @@
     margin-bottom: 35px;
     animation: pulse 7s infinite;
 }
+
+#decide {
+    font-family:'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 25px;
+    color: lightyellow;
+    margin-bottom: 35px;
+    animation: bounce 7s infinite;
+}
+
+#choose {
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 20px;
+    color: red;
+    margin-top: -5px;
+    margin-bottom: -2px;
+}
+
 #gamesbeginpic {
     margin-top: -90px;
     margin-left: 30px;
