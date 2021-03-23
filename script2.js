@@ -20,18 +20,27 @@ var playerPoints = document.querySelector("#points");
 
 let cnotemusicsound = new Audio ('Assets/ESM_Vibe_One_Shot_Synth_Alternative_R&B_Piano_Emotion_C_Melodic_Stab_Note_Dusty.wav')
 cnotemusicsound.volume = 1.0;
+cnotemusicsound.playbackRate = 1.0;
 
 let dnotemusicsound = new Audio ('Assets/ESM_Vibe_One_Shot_Synth_Organic_LoFi_Smeared_D_Melodic_Stab_Note_Dusty.wav')
 cnotemusicsound.volume = 0.6;
+cnotemusicsound.playbackRate = 2.0;
 
 let gnotemusicsound = new Audio ('Assets/PSoul_Piano_Gmaj_Rusty_Piano_Chord.wav')
 cnotemusicsound.volume = 0.6;
+cnotemusicsound.playbackRate = 2.0;
 
 let enotemusicsound = new Audio ('Assets/RU_PP_Screws_oneshot_short_E5.wav')
 cnotemusicsound.volume = 0.6;
+cnotemusicsound.playbackRate = 2.0;
 
 let bbnotemusicsound = new Audio ('Assets/SNS_NA_piano_north_Bm.wav')
 cnotemusicsound.volume = 0.6;
+cnotemusicsound.playbackRate = 2.0;
+
+let fsharpnotemusicsound = new Audio ('Assets/RTR_Fmaj7_PianoChord_13.wav')
+cnotemusicsound.volume = 0.6;
+cnotemusicsound.playbackRate = 2.0;
 
 ///////////////////////
 //<source class="c-note-music" src="Assets/ESM_Vibe_One_Shot_Synth_Alternative_R&B_Piano_Emotion_C_Melodic_Stab_Note_Dusty.wav" type="audio/mpeg" id="cnotemusic" onclick="play()"></audio></button>
@@ -63,6 +72,11 @@ const bbnotemusic = document.querySelector('#bbnotechoice').addEventListener('cl
         bbnotemusicsound.play();
 })
 
+const fsharpnotemusic = document.querySelector('#fsharpnotechoice').addEventListener('click', () => {
+    console.log('test6')
+        fsharpnotemusicsound.play();
+})
+
 //////////////////////////////////
 
 ////radio button select code//////
@@ -82,6 +96,7 @@ let dbuttonClicked = document.querySelector('#d-button1')
 let ebuttonClicked = document.querySelector('#e-button1')
 let gbuttonClicked = document.querySelector('#g-button1')
 let bbbuttonClicked = document.querySelector('#bb-button1')
+let fsharpbuttonClicked = document.querySelector('#fsharp-button1')
 
 
 var counter = document.querySelector('#points')
@@ -100,6 +115,9 @@ gButtonValueNumber = parseInt(gButtonValue, 10)
 
 bbButtonValue = bbbuttonClicked.value
 bbButtonValueNumber = parseInt(bbButtonValue, 10)
+
+fsharpButtonValue = fsharpbuttonClicked.value
+fsharpButtonValueNumber = parseInt(fsharpButtonValue, 10)
 
 // function showThePoints(){
 
@@ -173,6 +191,74 @@ bbButtonValueNumber = parseInt(bbButtonValue, 10)
         });
 
 
+        gbuttonClicked.addEventListener('click', () => {
+                // document.querySelector('#d-button1') {
+            // console.log('test7')
+                // log.innerText = dbuttonClicked.value;
+            gButtonValueNumber = 0
+            counter.innerText = gButtonValueNumber += 5
+
+                ///beginning of function code//
+            function storedPoints(){
+                storedPoints = () => {
+                var gButtonPoints = gButtonValueNumber++;
+                // console.log(dButtonPoints)
+                const callPoints3 = window.localStorage.setItem(storedPoints, JSON.stringify(gButtonPoints));
+            // console.log(callPoints);
+                const callThePoints3 = window.localStorage.getItem(storedPoints, JSON.parse(gButtonPoints));
+                console.log(callThePoints4);
+            }
+
+        }
+                storedPoints();
+        });
+
+        bbbuttonClicked.addEventListener('click', () => {
+                // document.querySelector('#d-button1') {
+            // console.log('test7')
+                // log.innerText = dbuttonClicked.value;
+            bbButtonValueNumber = 0
+            counter.innerText = bbButtonValueNumber += 0
+
+                ///beginning of function code//
+            function storedPoints(){
+                storedPoints = () => {
+                var bbButtonPoints = bbButtonValueNumber++;
+                // console.log(dButtonPoints)
+                const callPoints5 = window.localStorage.setItem(storedPoints, JSON.stringify(bbButtonPoints));
+            // console.log(callPoints);
+                const callThePoints5 = window.localStorage.getItem(storedPoints, JSON.parse(bbButtonPoints));
+                console.log(callThePoints5);
+            }
+
+        }
+                storedPoints();
+        });
+
+
+        fsharpbuttonClicked.addEventListener('click', () => {
+                // document.querySelector('#d-button1') {
+            // console.log('test7')
+                // log.innerText = dbuttonClicked.value;
+            fsharpButtonValueNumber = 0
+            counter.innerText = fsharpButtonValueNumber += 3
+
+                ///beginning of function code//
+            function storedPoints(){
+                storedPoints = () => {
+                var fsharpButtonPoints = fsharpButtonValueNumber++;
+                // console.log(dButtonPoints)
+                const callPoints6 = window.localStorage.setItem(storedPoints, JSON.stringify(fsharpButtonPoints));
+            // console.log(callPoints);
+                const callThePoints6 = window.localStorage.getItem(storedPoints, JSON.parse(fsharpButtonPoints));
+                console.log(callThePoints6);
+            }
+
+        }
+                storedPoints();
+        });
+
+
         // function Counter() {
         //         let count = 0;
 
@@ -212,3 +298,5 @@ bbButtonValueNumber = parseInt(bbButtonValue, 10)
     ///create an object for the counter and a function for calculates between the two///
 
     //https://javascript.info/task/counter-object-independent
+
+    //https://css-tricks.com/almanac/properties/a/animation/
