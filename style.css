@@ -4,12 +4,23 @@
 body {
 
     color: #d40b26;
-
+    font-family: Arial, Helvetica, sans-serif;
+    animation: pulse 8s infinite;
 
 }
 
+@keyframes pulse {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: purple;
+    }
+}
+
 p {
-    color: #1cd40b;
+    color: black;
+    word-wrap:normal;
 }
 
 
