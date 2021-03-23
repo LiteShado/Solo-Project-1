@@ -16,19 +16,31 @@
 #pressstart {
     float: center;
     font-size: 35px;
-    margin-top: 300px;
+    margin-top: 100px;
     margin-left: 200px;
-    padding: 100px;
-    animation: pulse 1s infinite;
+    padding: 50px;
+    animation: wobble;
+    animation-duration: 2s;
 }
 
-@keyframes pulse {
+
+
+@keyframes wobble {
     0% {
         background-color: red;
     }
     100% {
         background-color: black;
     }
+}
+
+#firstscreen {
+    margin-top: 25px;
+}
+
+#secondscreen {
+    position: relative;
+    margin-top: 25px;
 }
 
 #choicecontainer {

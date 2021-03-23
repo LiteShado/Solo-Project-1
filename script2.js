@@ -471,7 +471,7 @@ document.querySelector('#gscaleoption').addEventListener('click', () => {
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
                 document.querySelector('#restart').classList.remove('hidden')
-                document.querySelector('#youwinpic4').classList.add('active')
+                document.querySelector('#youwinpic2').classList.add('active')
 
 
 
