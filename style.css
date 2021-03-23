@@ -19,10 +19,22 @@
     margin-top: 20px;
     margin-left: 500px;
     padding: 30px;
+    color: lightsteelblue;
+    background-color: black;
     animation: wobble;
-    animation-duration: 2s;
+    animation-duration: 10s;
 }
 
+#welcome {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 55px;
+    font-variant: small-caps;
+    color: lightseagreen;
+    margin-bottom: 35px;
+    animation: pulse 7s infinite;
+}
 #gamesbeginpic {
     margin-top: -90px;
     margin-left: 30px;
@@ -34,6 +46,14 @@
 }
 
 
+@keyframes pulse {
+    0% {
+        background-color: lightslategrey;
+    }
+    100% {
+        background-color: none;
+    }
+}
 @keyframes wobble {
     0% {
         background-color: red;
@@ -90,14 +110,6 @@ main {
     opacity
 } */
 
-@keyframes pulse {
-    0% {
-        background-color: lightslategrey;
-    }
-    100% {
-        background-color: white;
-    }
-}
 
 p {
     color: whitesmoke;
