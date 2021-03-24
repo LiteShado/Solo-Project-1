@@ -281,6 +281,8 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
             document.querySelector('#bb-button2').classList.add('hidden')
             document.querySelector('#restart').classList.remove('hidden')
             document.querySelector('#cscale').classList.add('hidden')
+            document.querySelector('#escale').classList.remove('active')
+            document.querySelector('#escale').classList.add('hidden')
 
             document.querySelector('#fsharpnotechoice').classList.remove('active')
             document.querySelector('#fsharpnotechoice').classList.add('hidden')
@@ -296,6 +298,12 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
             document.querySelector('#youlosepic4').classList.add('active')
             document.querySelector('#submitbutton').classList.remove('hidden')
             document.querySelector('#submitbutton').classList.add('active')
+            document.querySelector('#restart').classList.remove('hidden')
+            document.querySelector('#restart').classList.add('active')
+            document.querySelector('#choose4').classList.remove('active')
+            document.querySelector('#choose4').classList.add('hidden')
+
+
 
 
 
@@ -374,6 +382,9 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
             document.querySelector('#choose3').classList.add('hidden')
             document.querySelector('#submitbutton').classList.remove('hidden')
             document.querySelector('#submitbutton').classList.add('active')
+            document.querySelector('#restart').classList.remove('hidden')
+            document.querySelector('#restart').classList.add('active')
+
 
 
 
@@ -438,6 +449,9 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
                 document.querySelector('#gscale').classList.add('hidden')
                 document.querySelector('#gscaleoption').classList.remove('active')
                 document.querySelector('#gscaleoption').classList.add('hidden')
+                document.querySelector('#escale').classList.remove('active')
+                document.querySelector('#escale').classList.add('hidden')
+
 
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
@@ -446,6 +460,12 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
                 document.querySelector('#choose3').classList.add('hidden')
                 document.querySelector('#submitbutton').classList.remove('hidden')
                 document.querySelector('#submitbutton').classList.add('active')
+                document.querySelector('#restart').classList.remove('hidden')
+                document.querySelector('#restart').classList.add('active')
+                document.querySelector('#choose4').classList.remove('active')
+                document.querySelector('#choose4').classList.add('hidden')
+
+
 
 
 
@@ -518,6 +538,9 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
                 document.querySelector('#gscale').classList.add('hidden')
                 document.querySelector('#gscaleoption').classList.remove('active')
                 document.querySelector('#gscaleoption').classList.add('hidden')
+                document.querySelector('#escale').classList.remove('active')
+                document.querySelector('#escale').classList.add('hidden')
+
 
                 document.querySelector('#cscale').classList.add('hidden')
                 document.querySelector('#cscaleoption').classList.add('hidden')
@@ -526,6 +549,12 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
                 document.querySelector('#choose3').classList.add('hidden')
                 document.querySelector('#submitbutton').classList.remove('hidden')
                 document.querySelector('#submitbutton').classList.add('active')
+                document.querySelector('#restart').classList.remove('hidden')
+                document.querySelector('#restart').classList.add('active')
+                document.querySelector('#choose4').classList.remove('active')
+                document.querySelector('#choose4').classList.add('hidden')
+
+
 
 
 
@@ -642,27 +671,41 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
                 document.querySelector('#dbuttonchoice').classList.add('hidden')
                 document.querySelector('#gnotechoice').classList.remove('active')
                 document.querySelector('#gnotechoice').classList.add('hidden')
+                document.querySelector('#gbuttonchoice').classList.remove('active')
                 document.querySelector('#gbuttonchoice').classList.add('hidden')
+                document.querySelector('#bbnotechoice').classList.remove('active')
                 document.querySelector('#bbnotechoice').classList.add('hidden')
+                document.querySelector('#bbbuttonlabel').classList.remove('active')
                 document.querySelector('#bbbuttonlabel').classList.add('hidden')
+                document.querySelector('#bbbuttonlabel2').classList.remove('active')
                 document.querySelector('#bbbuttonlabel2').classList.add('hidden')
+                document.querySelector('#enotechoice').classList.remove('active')
                 document.querySelector('#enotechoice').classList.add('hidden')
+                document.querySelector('#ebuttonchoice').classList.remove('active')
                 document.querySelector('#ebuttonchoice').classList.add('hidden')
+                document.querySelector('#c-button1').classList.remove('active')
                 document.querySelector('#c-button1').classList.add('hidden')
                 document.querySelector('#d-button1').classList.remove('active')
                 document.querySelector('#d-button1').classList.add('hidden')
+                document.querySelector('#g-button1').classList.remove('active')
                 document.querySelector('#g-button1').classList.add('hidden')
+                document.querySelector('#e-button1').classList.remove('active')
                 document.querySelector('#e-button1').classList.add('hidden')
+                document.querySelector('#bb-button1').classList.remove('active')
                 document.querySelector('#bb-button1').classList.add('hidden')
                 document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#fsharpbuttonlabel').classList.remove('active')
                 document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
                 document.querySelector('#esharp-button1').classList.add('hidden')
+                document.querySelector('#fsharp-button1').classList.remove('active')
                 document.querySelector('#fsharp-button1').classList.add('hidden')
                 document.querySelector('#fsharpnotechoice').classList.remove('active')
                 document.querySelector('#fsharpnotechoice').classList.add('hidden')
                 document.querySelector('#esharpnotechoice').classList.add('hidden')
                 document.querySelector('#gscale').classList.remove('active')
                 document.querySelector('#gscale').classList.add('hidden')
+                document.querySelector('#escale').classList.remove('active')
+                document.querySelector('#escale').classList.add('hidden')
                 document.querySelector('#gscaleoption').classList.remove('active')
                 document.querySelector('#gscaleoption').classList.add('hidden')
 
@@ -671,8 +714,13 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
                 document.querySelector('#restart').classList.remove('hidden')
                 document.querySelector('#youlosepic4').classList.add('active')
                 document.querySelector('#choose3').classList.add('hidden')
+                document.querySelector('#choose4').classList.remove('active')
+                document.querySelector('#choose4').classList.add('hidden')
                 document.querySelector('#submitbutton').classList.remove('hidden')
                 document.querySelector('#submitbutton').classList.add('active')
+                document.querySelector('#restart').classList.remove('active')
+                document.querySelector('#restart').classList.add('hidden')
+
 
 
 
@@ -843,13 +891,16 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
                 document.querySelector('#gnotechoice').classList.remove('active')
                 document.querySelector('#gnotechoice').classList.add('hidden')
                 document.querySelector('#gbuttonchoice').classList.add('hidden')
+                document.querySelector('#bbnotechoice').classList.remove('active')
                 document.querySelector('#bbnotechoice').classList.add('hidden')
                 document.querySelector('#bbbuttonlabel').classList.add('hidden')
                 document.querySelector('#bbbuttonlabel2').classList.remove('active')
                 document.querySelector('#bbbuttonlabel2').classList.add('hidden')
                 document.querySelector('#bbbuttonlabel').classList.remove('active')
                 document.querySelector('#bbbuttonlabel').classList.add('hidden')
+                document.querySelector('#enotechoice').classList.remove('active')
                 document.querySelector('#enotechoice').classList.add('hidden')
+                document.querySelector('#ebuttonchoice').classList.remove('active')
                 document.querySelector('#ebuttonchoice').classList.add('hidden')
                 document.querySelector('#c-button1').classList.remove('active')
                 document.querySelector('#c-button1').classList.add('hidden')
@@ -863,6 +914,7 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
                 document.querySelector('#bb-button2').classList.remove('active')
                 document.querySelector('#bb-button2').classList.add('hidden')
                 document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+                document.querySelector('#fsharpbuttonlabel').classList.remove('active')
                 document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
                 document.querySelector('#esharp-button1').classList.add('hidden')
                 document.querySelector('#fsharp-button1').classList.remove('active')
@@ -992,39 +1044,54 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
         // console.log('test7')
             // log.innerText = dbuttonClicked.value;
 
+            document.querySelector('#cnotechoice').classList.remove('active')
             document.querySelector('#cnotechoice').classList.add('hidden')
             document.querySelector('#youchoose').classList.add('hidden')
             document.querySelector('#direction').classList.add('hidden')
             document.querySelector('#flask').classList.add('hidden')
+            document.querySelector('#cbuttonchoice').classList.remove('active')
             document.querySelector('#cbuttonchoice').classList.add('hidden')
             document.querySelector('#dnotechoice').classList.add('hidden')
             document.querySelector('#dbuttonchoice').classList.add('hidden')
+            document.querySelector('#gnotechoice').classList.remove('active')
             document.querySelector('#gnotechoice').classList.add('hidden')
+            document.querySelector('#gbuttonchoice').classList.remove('active')
             document.querySelector('#gbuttonchoice').classList.add('hidden')
+            document.querySelector('#bbnotechoice').classList.remove('active')
             document.querySelector('#bbnotechoice').classList.add('hidden')
             document.querySelector('#bbbuttonlabel').classList.add('hidden')
             document.querySelector('#bbbuttonlabel2').classList.remove('active')
             document.querySelector('#bbbuttonlabel2').classList.add('hidden')
+            document.querySelector('#enotechoice').classList.remove('active')
             document.querySelector('#enotechoice').classList.add('hidden')
+            document.querySelector('#ebuttonchoice').classList.remove('active')
             document.querySelector('#ebuttonchoice').classList.add('hidden')
+            document.querySelector('#c-button1').classList.remove('active')
             document.querySelector('#c-button1').classList.add('hidden')
             document.querySelector('#d-button1').classList.add('hidden')
+            document.querySelector('#g-button1').classList.remove('active')
             document.querySelector('#g-button1').classList.add('hidden')
+            document.querySelector('#e-button1').classList.remove('active')
             document.querySelector('#e-button1').classList.add('hidden')
             document.querySelector('#bb-button1').classList.add('hidden')
             document.querySelector('#bb-button2').classList.remove('active')
             document.querySelector('#bb-button2').classList.add('hidden')
             document.querySelector('#esharpbuttonlabel').classList.add('hidden')
+            document.querySelector('#fsharpbuttonlabel').classList.remove('active')
             document.querySelector('#fsharpbuttonlabel').classList.add('hidden')
             document.querySelector('#esharp-button1').classList.add('hidden')
+            document.querySelector('#fsharp-button1').classList.remove('active')
             document.querySelector('#fsharp-button1').classList.add('hidden')
+            document.querySelector('#fsharpnotechoice').classList.remove('active')
             document.querySelector('#fsharpnotechoice').classList.add('hidden')
             document.querySelector('#esharpnotechoice').classList.add('hidden')
 
             document.querySelector('#escaleoption').classList.remove('active')
             document.querySelector('#escaleoption').classList.add('hidden')
             document.querySelector('#gscale').classList.remove('active')
-            document.querySelector('#gscale').classList.add('hidden')
+            document.querySelector('#gscale').classList.remove('active')
+            document.querySelector('#escale').classList.remove('active')
+            document.querySelector('#escale').classList.add('hidden')
             document.querySelector('#cscale').classList.add('hidden')
             document.querySelector('#cscaleoption').classList.add('hidden')
             document.querySelector('#restart').classList.remove('active')
@@ -1038,6 +1105,9 @@ document.querySelector('#cscaleoption').addEventListener('click', () => {
             document.querySelector('#youwon').classList.add('active')
             document.querySelector('#submitbutton').classList.remove('hidden')
             document.querySelector('#submitbutton').classList.add('active')
+            document.querySelector('#choose4').classList.remove('active')
+            document.querySelector('#choose4').classList.add('hidden')
+
 
 
 
