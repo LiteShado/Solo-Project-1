@@ -55,6 +55,37 @@
     margin-top: -5px;
     margin-bottom: -2px;
 }
+#choose2 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    opacity: 50%;
+    margin-top: -5px;
+    margin-bottom: -2px;
+}
+#choose3 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 20px;
+    color: red;
+    opacity: 50%;
+    margin-top: -5px;
+    margin-bottom: -2px;
+}
+
+#choose4 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 20px;
+    color: red;
+    opacity: 50%;
+    margin-top: -5px;
+    margin-bottom: -2px;
+}
 
 #gamesbeginpic {
     margin-top: -90px;
